@@ -1,129 +1,230 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-	<title>Patrones de Diseño</title>
-	<meta name="author" content="Juan Esteban Fonseca Avila">
+	<title>reveal.js</title>
+	<meta name="author" content="Hakim El Hattab">
 	<link rel="stylesheet" href="dist/reset.css">
 	<link rel="stylesheet" href="dist/reveal.css">
 	<link rel="stylesheet" href="dist/theme/black.css">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<!-- Theme used for syntax highlighted code -->
 	<link rel="stylesheet" href="plugin/highlight/monokai.css">
 </head>
-
 <body>
 	<div class="reveal">
 		<div class="slides">
-
 			<section>
 				<a href="https://revealjs.com">
 					<img src="img/logojava" alt="reveal.js logo"
 						style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
 				</a>
 				<h3>JUAN ESTEBAN FONSECA AVILA</h3>
-				<h2><span style="display: inline-block;" class="fragment fade-right">PATRONES&nbsp;|</span>
-					<span style="display: inline-block;" class="fragment fade-right">DE&nbsp;|</span>
-					<span style="display: inline-block;" class="fragment fade-right">DISEÑO&nbsp;|</span>
-					<span style="display: inline-block;" class="fragment fade-right">DE&nbsp;</span>
-					<span style="display: inline-block;" class="fragment fade-right">SOFTWARE&nbsp;</span>
+				<h2><span style="display: inline-block;" class="fragment fade-right">PLANOS&nbsp;|</span>
+					<span style="display: inline-block;" class="fragment fade-right">XML&nbsp;|</span>
+					<span style="display: inline-block;" class="fragment fade-right">JSON&nbsp;|</span>
+					<span style="display: inline-block;" class="fragment fade-right">PARQUET&nbsp;</span>
 				</h2>
 
 				<p>
-					<small>Created by <a href="https://github.com/JuanesB2f">Juan Esteban Fonseca</a> and <a
-							href="https://github.com/hakimel/reveal.js/graphs/contributors">contributors</a></small>
-				</p>
-			</section>
+	@@ -44,192 +45,43 @@ <h2><span style="display: inline-block;" class="fragment fade-right">PLANOS&nbsp
 
 			<section>
 				<section data-background="#31384D ">
-					<h2>Abstract Factory</h2>
+					<h2>ARCHIVOS PLANOS</h2>
 					<p>
-						En este patrón, una interfaz crea conjuntos o familias de objetos relacionados sin especificar el nombre de la clase. Busca agrupar un conjunto de clases que tiene un funcionamiento en común llamadas familias, las cuales son creadas mediante un Factory. Este patrón es especialmente útil cuando requerimos tener ciertas familias de clases para resolver un problema, sin embargo, puede que se requieran crear implementaciones paralelas de estas clases para resolver el mismo problema pero con una implementación distinta.
+						En el contexto de la programación, los "archivos planos" en JavaScript se refieren a archivos de
+						texto simples que contienen código JavaScript, sin ningún formato especial. Estos archivos
+						planos
+						generalmente tienen la extensión ".js" y se utilizan para almacenar y organizar el código
+						JavaScript
+						que se utilizará en una aplicación o sitio web.
 					</p>
 					<a href="#" class="navigate-down">
+
 					</a>
+				</section>
+				<section data-background="#252829">
+					<p>
+						Los archivos planos de JavaScript se pueden crear y editar con cualquier editor de texto simple,
+						como el Bloc de notas en Windows o TextEdit en Mac. Una vez que se ha escrito el código
+						JavaScript
+						en el archivo plano, se puede llamar a este archivo desde otros archivos HTML o JavaScript
+						utilizando la etiqueta "script" en HTML o la función "require" en Node.js.
+					</p>
+					</a>
+				</section>
+				<section data-background="#252829">
+					<p>
+						Los archivos planos de JavaScript son una forma común de organizar y reutilizar el código en
+						una
+						aplicación o sitio web, ya que permiten separar el código JavaScript del código HTML y CSS.
+						Además,
+						los archivos planos pueden ser versionados y controlados con herramientas de control de
+						versiones
+						como Git, lo que facilita la colaboración en el desarrollo de software.
+					</p>
 				</section>
 			</section>
-			
 
-			<section>
-				<section data-background="#31384D ">
-					<h2>
-						Builder Patterns
-					</h2>
-					<p>
-					El patrón Builder construye un objeto complejo utilizando objetos simples y utilizando un enfoque paso a paso. Este tipo de patrón de diseño se incluye en el patrón de creación, ya que este patrón proporciona una de las mejores formas de crear un objeto. Una clase Builder construye el objeto final paso a paso. Este constructor es independiente de otros objetos.
-					</p>
-					<a href="#" class="navigate-down">
-					</a>
-				</section>
-			</section>
-
-
-			<section>
-				<section data-background="#31384D ">
-					<h2>Factory Method</h2>
-					<p>
-						Proporciona una interfaz para crear objetos en una superclase, pero permite que las subclases alteren el tipo de objetos que se crearán. Proporciona instanciación de objetos implícita a través de interfaces comunes.
-					</p>
-					<a href="#" class="navigate-down">
-					</a>
-				</section>
-			</section>
-
-			<section>
-				<section data-background="#31384D">
-					<h2>Archivos Paquete</h2>
-					<p>
-						En el contexto de la programación, un archivo paquete (también conocido como "paquete" o "biblioteca") es un conjunto de archivos relacionados que se agrupan para su distribución y reutilización. Los archivos en un paquete suelen incluir código fuente, recursos y documentación.
-					</p>
-					<a href="#" class="navigate-down">
-					</a>
-				</section>
-
-				<section>
-					<p>
-						Los archivos paquete son una forma común de compartir código entre desarrolladores y proyectos, ya que permiten la reutilización de funcionalidades comunes sin tener que escribir todo el código desde cero. Los paquetes también ayudan a mantener el código organizado y fácil de mantener.
-					</p>
-					<a href="#" class="navigate-down">
-					</a>
-				</section>
-
-				<section>
-					<p>
-						En muchos lenguajes de programación, como Java, Python y JavaScript, existen herramientas que permiten a los desarrolladores crear, distribuir y utilizar archivos paquete. Por ejemplo, en Java, los paquetes se organizan en una estructura jerárquica de directorios y se declaran mediante la palabra clave "package", mientras que en Python, se utilizan archivos "setup.py" y "requirements.txt" para definir y gestionar paquetes.
-					</p>
-					<a href="#" class="navigate-down">
-					</a>
-				</section>
+			<section data-background="#31384D ">
 				<section data-auto-animate>
-					<h2 data-id="code-title">Ejemplo de Archivo Paquete</h2>
+					<h2 data-id="code-title">ARCHIVOS PLANOS</h2>
 					<pre data-id="code-animation">
-						<code class="hljs" data-trim data-line-numbers="|4,8-11|17|22-24">
-{
-  "name": "mypackage",
-  "version": "1.0.0",
-  "description": "Mi paquete de ejemplo",
-  "main": "index.js",
-  "dependencies": {
-    "lodash": "^4.17.21"
-  }
-}
-						</code>
-					</pre>
+								<code class="hljs" data-trim data-line-numbers="|4,8-11|17|22-24"><script type="text/template">
+						var http = new XMLHttpRequest();
+					xhttp.onreadystatechange = function() {
+					if (this.readyState == 4 && this.status == 200) {
+						// Acceder al contenido del archivo
+						console.log(this.responseText);
+					}
+					};
+					xhttp.open("GET", "archivo.txt", true);
+					xhttp.send();
+									</script></code></pre>
 				</section>
-				
 			</section>
 
+
+			<section data-background="#31384D ">
+				<section data-auto-animate>
+					<h2 data-id="code-title">ARCHIVOS XML</h2>
+					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="|4,8-11|17|22-24"><script type="text/template">
+								var xhttp = new XMLHttpRequest();
+								xhttp.onreadystatechange = function() {
+								if (this.readyState == 4 && this.status == 200) {
+									// Cargar el archivo XML en un objeto DOM
+									var xmlDoc = this.responseXML;
+
+									// Acceder a un elemento XML
+									var titulo = xmlDoc.getElementsByTagName("titulo")[0].childNodes[0].nodeValue;
+
+									// Modificar un elemento XML
+									xmlDoc.getElementsByTagName("autor")[0].childNodes[0].nodeValue = "John Smith";
+
+									// Crear un nuevo elemento XML
+									var nuevoElemento = xmlDoc.createElement("precio");
+									var nuevoTexto = xmlDoc.createTextNode("10.99");
+									nuevoEleme+nto.appendChild(nuevoTexto);
+									xmlDoc.getElementsByTagName("libro")[0].appendChild(nuevoElemento);
+								}
+								};
+								xhttp.open("GET", "archivo.xml", true);
+								xhttp.send();
+															</script></code></pre>
+
+				</section>
+
+
+			</section>
+
+			<section data-background="#31384D">
+				<h2>ARCHIVOS XML</h2>
+				<p>
+					XML (Extensible Markup Language) es un lenguaje de marcado que se utiliza para almacenar y
+					transportar datos de forma estructurada e independiente de la plataforma. Los archivos XML se
+					componen de etiquetas que definen la estructura y el contenido de los datos
+
+				</p>
+				<a href="#" class="navigate-down">
+
+				</a>
+			</section>
 			<section>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/jvURE4N9NE8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-			</section
-			</html>
+				Los archivos XML se utilizan ampliamente en aplicaciones web y móviles para intercambiar datos
+				entre diferentes sistemas y aplicaciones. Los archivos XML se pueden leer y escribir utilizando
+				diferentes lenguajes de programación como Java, C#, Python y JavaScript.
+			</section>
+			<section>
+				<p>
+					Las ventajas de los archivos XML son la estructura clara y fácil de entender, la portabilidad
+					entre diferentes plataformas y la capacidad de definir estructuras de datos complejas. También
+					es posible definir esquemas XML para validar la estructura y el contenido de los archivos XML.
+
+				</p>
+				<a href="#" class="navigate-down">
+
+				</a>
+			</section>
+			</section>
+
+
+
+
+
+			<section>
+				<section data-background="#31384D ">
+					<h2>ARCHIVOS JSON</h2>
+					<p>
+						En JavaScript, un archivo JSON es un formato de datos ligero utilizado para intercambiar
+						datos entre aplicaciones y servidores web. JSON significa "JavaScript Object Notation" y se
+						utiliza para representar objetos y estructuras de datos en un formato fácil de leer y
+						escribir.
+
+					</p>
+					<a href="#" class="navigate-down">
+
+					</a>
+				</section>
+
+				<section>
+					<p>
+						Un archivo JSON se compone de una serie de pares clave-valor, donde la clave es una cadena de
+						texto y el valor puede ser un objeto, un array, un número, una cadena de texto, un booleano o
+						null. Estos pares clave-valor están separados por comas y se encierran entre llaves {} para
+						representar objetos, o entre corchetes [] para representar arrays.
+					</p>
+
+
+					<a href="#" class="navigate-down">
+
+					</a>
+				</section>
+
+				<section>
+					<p>
+						En JavaScript, se puede acceder a los datos de un archivo JSON utilizando el método
+						JSON.parse(), que convierte una cadena de texto JSON en un objeto JavaScript. También se
+						puede convertir un objeto JavaScript en una cadena de texto JSON utilizando el método
+						JSON.stringify().
+
+					</p>
+					<a href="#" class="navigate-down">
+
+					</a>
+				</section>
+
+
+				<section data-auto-animate>
+					<h2 data-id="code-title">ARCHIVOS JSON</h2>
+					<pre data-id="code-animation">
+									<code class="hljs" data-trim data-line-numbers="|4,8-11|17|22-24"><script type="text/template">
+										{
+											"name": "Juan",
+											"age": 30,
+											"hobbies": [
+											  "programación",
+											  "jardinería",
+											  "leer"
+											],
+											"address": {
+											  "street": "Calle Falsa",
+											  "city": "Springfield",
+											  "country": "Estados Unidos"
+											}
+										  }
+										</script></code></pre>
+
+				</section>
+
+			</section>
+
+
+	@@ -319,4 +171,4 @@ <h2 data-id="code-title">ARCHIVOS PAQUET</h2>
+	</script>
+</body>
+
+</html>
